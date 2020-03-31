@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AirbnbStatic</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <%= link_to "Static Airbnb", root_path, class: "navbar-brand" %>
+      <!-- Produces <a class="navbar-brand" href="/">Static Airbnb</a> -->
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
